@@ -15,11 +15,11 @@ function App() {
       <main>
           <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
           <Switch>
-              <Route path="/" component={Preface} exact />
-              <Route path="/preface" component={Preface} exact />
-              <Route path="/teach" component={Preface} exact />
-              <Route path="/prologue" component={Prologue} exact />
-              <Route path="/about" component={About} exact />
+              <Route path={process.env.PUBLIC_URL + '/'} component={Preface} exact />
+              <Route path={process.env.PUBLIC_URL + '/preface'} component={Preface} exact />
+              <Route path={process.env.PUBLIC_URL + '/teach'} component={Preface} exact />
+              <Route path={process.env.PUBLIC_URL + '/prologue'} component={Prologue} exact />
+              <Route path={process.env.PUBLIC_URL + '/about'} component={About} exact />
           </Switch>
       </main>
   )
