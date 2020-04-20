@@ -2,17 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import txt from './preface.txt';
 
-function Definition(props) {
-    return (
-      <div className="Definition-box">
-        <span>
-          <strong>Definition</strong> {props.value}
-        </span>
-      </div>
-    );
-}
-
-
 
 function App() {
 
