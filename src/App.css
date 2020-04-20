@@ -2,20 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&display=swap');
 
-.App {
+.Post {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .Definition-box {
   display: inline-block;
@@ -25,7 +15,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.App-header > .Title {
+.Header > .Title {
   display: inline-block;
   flex-direction: row;
   align-items: center;
@@ -36,7 +26,7 @@
   margin-block-end: 1%;
 }
 
-.App-header > .Subtitle {
+.Header > .Subtitle {
   display: block;
   flex-direction: row;
   align-items: left;
@@ -48,7 +38,7 @@
   font-style: italic;
 }
 
-.App-body {
+.Body {
   display: block;
   text-align: start;
   font-family: 'Open Sans', sans-serif;
@@ -59,11 +49,6 @@
 
 }
 
-
-.quote {
-  font-style: italic;
-  font-size: calc(10px + 2vmin);
-}
 .App-link {
   color: #61dafb;
 }
