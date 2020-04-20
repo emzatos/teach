@@ -1,6 +1,6 @@
 {
   "name": "teach",
-  "homepage": "/",
+  "homepage": "/teach",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

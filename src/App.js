@@ -17,6 +17,7 @@ function App() {
           <Switch>
               <Route path="/" component={Preface} exact />
               <Route path="/preface" component={Preface} exact />
+              <Route path="/teach" component={Preface} exact />
               <Route path="/prologue" component={Prologue} exact />
               <Route path="/about" component={About} exact />
           </Switch>
