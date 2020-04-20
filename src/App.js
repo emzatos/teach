@@ -1,24 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import txt from './preface.txt';
+
+function Definition(props) {
+    return (
+      <div className="Definition-box">
+        <span>
+          <strong>Definition</strong> {props.value}
+        </span>
+      </div>
+    );
+}
+
+
 
 function App() {
+
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+    const fileUrl = txt;
+    fetch(fileUrl)
+    .then( r => r.text() )
+    .then( t => setText(t.toString()) );
+  }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="Title">Preface</p>
+        <p className="Subtitle">I hate algebra.<br/>John Conway</p>
       </header>
+      <body>
+        <div className="App-body" dangerouslySetInnerHTML={{ __html: text }}/>
+      </body>
     </div>
   );
 }

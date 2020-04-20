@@ -32,5 +32,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "html-loader": "^1.1.0",
+    "raw-loader": "^4.0.1"
   }
 }
