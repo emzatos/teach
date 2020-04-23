@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom'
+import {BrowserRouter, Route} from 'react-router-dom'
 import './App.css';
 import Sidebar from "./Sidebar.js"
 
@@ -14,13 +14,13 @@ function App() {
   return (
       <main>
           <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
-          <Switch>
-              <Route path={process.env.PUBLIC_URL + '/'} component={Preface} exact />
-              <Route path={process.env.PUBLIC_URL + '/preface'} component={Preface} exact />
-              <Route path={process.env.PUBLIC_URL + '/teach'} component={Preface} exact />
-              <Route path={process.env.PUBLIC_URL + '/prologue'} component={Prologue} exact />
-              <Route path={process.env.PUBLIC_URL + '/about'} component={About} exact />
-          </Switch>
+          <BrowserRouter baseName={process.env.PUBLIC_URL}>
+              <Route path= '/' component={Preface} exact />
+              <Route path= '/preface' component={Preface}  />
+              <Route path='/teach' component={Preface}  />
+              <Route path= '/prologue' component={Prologue}  />
+              <Route path= '/about' component={About}  />
+          </BrowserRouter>
       </main>
   )
 }
