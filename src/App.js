@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom'
+import {HashRouter, Route} from 'react-router-dom'
 import './App.css';
 import Sidebar from "./Sidebar.js"
 
@@ -13,13 +13,13 @@ function App() {
 
   return (
       <main>
-          <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
-          <BrowserRouter baseName={process.env.PUBLIC_URL}>
+          <HashRouter>
+              <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
               <Route path= '/' component={Preface} exact />
               <Route path= '/preface' component={Preface}  />
               <Route path= '/prologue' component={Prologue}  />
               <Route path= '/about' component={About}  />
-          </BrowserRouter>
+          </HashRouter>
       </main>
   )
 }

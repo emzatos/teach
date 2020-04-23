@@ -1,21 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
+import { Link } from "react-router-dom";
 import './burger.css'
 
-export default props => {
+function Sidebar(props) {
+  
+  const [state, setState] = useState(false);
+
   return (
-    <Menu {...props}>
-      <a className="menu-item" href="/preface">
+    <Menu isOpen={state} onStateChange={() => setState(props.isOpen)}>
+      <Link className="menu-item" to="/preface" onClick={()=>setState(false)}>
         Preface
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/prologue">
+      <Link className="menu-item" to="/prologue" onClick={()=>setState(false)}>
         Prologue
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/about">
+      <Link className="menu-item" to="/about" onClick={()=>setState(false)}>
         About
-      </a>
+      </Link>
     </Menu>
   );
 };
+
+export default Sidebar
