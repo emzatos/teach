@@ -4,11 +4,17 @@ import { Link } from "react-router-dom";
 import './burger.css'
 
 function Sidebar(props) {
-  
+
   const [state, setState] = useState(false);
 
+  const style = {
+    bmMenuWrap: {
+      transition: 'all 0.3s'
+    }
+  }
+
   return (
-    <Menu isOpen={state} onStateChange={() => setState(props.isOpen)}>
+    <Menu styles = {style} isOpen={state} onStateChange={() => setState(props.isOpen)}>
       <Link className="menu-item" to="/preface" onClick={()=>setState(false)}>
         Preface
       </Link>
