@@ -17,7 +17,6 @@ function App() {
           <BrowserRouter baseName={process.env.PUBLIC_URL}>
               <Route path= '/' component={Preface} exact />
               <Route path= '/preface' component={Preface}  />
-              <Route path='/teach' component={Preface}  />
               <Route path= '/prologue' component={Prologue}  />
               <Route path= '/about' component={About}  />
           </BrowserRouter>
