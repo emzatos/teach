@@ -19,7 +19,7 @@ function Preface(props) {
     <div className="Post">
       <header className="Header">
         <p className="Title">Preface</p>
-        <Quote quote="I hate algebra." author="John Conway"/>
+        <Quote quote="i hate algebra" author="John Conway"/>
       </header>
       <body>
         <div className="Body" dangerouslySetInnerHTML={{ __html: text }}/>

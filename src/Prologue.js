@@ -10,7 +10,7 @@ function Prologue(props) {
     <div className="Post">
       <header className="Header">
         <p className="Title">Prologue</p>
-        <Quote quote='mathematics is the art of giving the same name to different things.' author='Henri Poincaré'/>
+        <Quote quote='mathematics is the art of giving the same name to different things' author='Henri Poincaré'/>
       </header>
       <body>
         <div className="Body">

@@ -20,6 +20,8 @@ function App() {
               <Route path= '/prologue' component={Prologue}  />
               <Route path= '/about' component={About}  />
           </HashRouter>
+          <script defer src="https://cdn.commento.io/js/commento.js"></script>
+            <div id="commento"></div>
       </main>
   )
 }
