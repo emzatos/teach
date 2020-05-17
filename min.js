@@ -1224,7 +1224,7 @@
       B.popupRender(e),
         De(o, "blurred"),
         qe(n, "style", ""),
-        (window.location.hash = T),
+        // (window.location.hash = T),
         Se(L).focus();
     });
   var wo = !(B.main = function (e) {
