@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import txt from './preface.txt';
-
+import Quote from "./Quote.js";
 
 function Preface(props) {
 
@@ -19,7 +19,7 @@ function Preface(props) {
     <div className="Post">
       <header className="Header">
         <p className="Title">Preface</p>
-        <p className="Subtitle">I hate algebra.<br/>John Conway</p>
+        <Quote quote="I hate algebra." author="John Conway"/>
       </header>
       <body>
         <div className="Body" dangerouslySetInnerHTML={{ __html: text }}/>
