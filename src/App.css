@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300&display=swap');
 .Post {
   text-align: center;
 }
 
-
-.Definition-box {
-  display: inline-block;
-  background-color: rgb(236, 236, 236);
-  color: black;
-  padding: calc(10px);
-  font-family: 'Open Sans', sans-serif;
-}
 
 .Header > .Title {
   display: inline-block;
@@ -24,18 +16,6 @@
   color: black;
   font-family: 'Prata', serif;
   margin-block-end: 1%;
-}
-
-.Header > .Subtitle {
-  display: block;
-  flex-direction: row;
-  align-items: left;
-  justify-content: start;
-  font-size: calc(12px + 2vmin);
-  margin-block-start: auto;
-  color: rgb(184, 182, 182);
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-style: italic;
 }
 
 .Body {
@@ -51,13 +31,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

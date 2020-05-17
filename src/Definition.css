@@ -1,0 +1,9 @@
+.Definition-box {
+    display: inline-block;
+    background-color: rgba(189, 131, 44, 0.3);
+    color: black;
+    padding: calc(10px);
+    margin-left: calc(10px);
+    margin-right: calc(10px);
+    font-family: 'Open Sans', sans-serif;
+  }
