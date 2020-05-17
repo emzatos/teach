@@ -7,6 +7,7 @@ import Commento from './Commento.js';
 function Prologue(props) {
 
   return (
+    <div>
     <div className="Post">
       <header className="Header">
         <p className="Title">Prologue</p>
@@ -91,8 +92,11 @@ function Prologue(props) {
           With that, our journey continues!
 
         </div>
-        <Commento id="prologue"/>
       </body>
+    </div>
+      <div className="Footer">
+      <Commento id="prologue"/>
+      </div>
     </div>
   );
 }

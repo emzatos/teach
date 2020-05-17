@@ -17,6 +17,7 @@ function Preface(props) {
 
 
   return (
+    <div>
     <div className="Post">
       <header className="Header">
         <p className="Title">Preface</p>
@@ -25,7 +26,11 @@ function Preface(props) {
       <body>
         <div className="Body" dangerouslySetInnerHTML={{ __html: text }}/>
       </body>
+      
+    </div>
+      <div className="Footer">
       <Commento id="preface"/>
+      </div>
     </div>
   );
 }
