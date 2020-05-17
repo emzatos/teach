@@ -26,7 +26,11 @@
   padding-left: 25%;
   padding-right: 25%;
   padding-bottom: 5%;
+  max-width: 900px;
+}
 
+.Footer {
+  max-width: 900px;
 }
 
 .App-link {
