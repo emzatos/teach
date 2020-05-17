@@ -94,9 +94,6 @@ function Prologue(props) {
         </div>
       </body>
     </div>
-      <div className="Footer">
-      <Commento id="prologue"/>
-      </div>
     </div>
   );
 }

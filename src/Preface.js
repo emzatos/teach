@@ -28,9 +28,6 @@ function Preface(props) {
       </body>
       
     </div>
-      <div className="Footer">
-      <Commento id="preface"/>
-      </div>
     </div>
   );
 }
