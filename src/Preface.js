@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import txt from './preface.txt';
 import Quote from "./Quote.js";
-import Commento from "./Commento.js";
 
 function Preface(props) {
 

@@ -2,7 +2,6 @@ import React from 'react';
 import Definition from './Definition.js';
 import './App.css';
 import Quote from './Quote.js';
-import Commento from './Commento.js';
 
 function Prologue(props) {
 
