@@ -1,19 +1,24 @@
 import React from 'react';
-import './Definition.css';
 function Definition(props) {
-    const style = {
-        display: 'inline-block',
-        backgroundColor: props.title === "Note" ? 'rgba(189, 131, 44, 0.3)' : 'rgba(113, 22, 189, 0.3)',
-        color: 'black',
-        padding: 'calc(10px)',
-        marginLeft: 'calc(10px)',
-        marginRight: 'calc(10px)',
-        fontFamily: 'Open Sans, sans-serif'
+
+      const spanStyle = {
+        lineHeight: "1.5",
+        color: props.title === "Note" ? "#ba1626" : "rgb(113, 22, 189)"
+      }
+
+      const textStyle = {
+          background: props.title === "Note" ? "#ba1626" : "rgb(113, 22, 189)",
+          marginRight: "5px",
+          display: "inline-block",
+          lineHeight: "1.2",
+          color: "white",
+          padding: "3px 6px"
+
       }
     return (
-        <div className="Definition-box" style={style}>
-        <span>
-            <strong>{props.title || "Definition"}</strong> {props.children}
+        <div>
+        <span style={spanStyle}>
+            <span style={textStyle}>{props.title || "Definition"}</span> {props.children}
         </span>
         </div>
     );

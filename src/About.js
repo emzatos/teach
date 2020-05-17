@@ -9,11 +9,10 @@ function About(props) {
     <div className="Post">
       <header className="Header">
         <p className="Title">About</p>
-        <Quote quote="hi" author="hi"></Quote>
       </header>
       <body>
         <div className="Body">
-            Under construction
+            Hello there I'm Emran
         </div>
       </body>
     </div>

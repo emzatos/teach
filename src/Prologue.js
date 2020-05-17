@@ -10,7 +10,7 @@ function Prologue(props) {
     <div className="Post">
       <header className="Header">
         <p className="Title">Prologue</p>
-        <Quote quote='Mathematics is the art of giving the same name to different things.' author='Henri Poincaré'/>
+        <Quote quote='mathematics is the art of giving the same name to different things.' author='Henri Poincaré'/>
       </header>
       <body>
         <div className="Body">
@@ -27,7 +27,6 @@ function Prologue(props) {
             An <i>abstraction</i> is a simplified model of a concept. It attempts to remove unnecessary features that complicate our understanding of how something works.
           </Definition>
           <br/>
-          <br/>
           Before I elaborate further, let’s look at an example.
           <br/>
           <br/>
@@ -38,20 +37,19 @@ function Prologue(props) {
           Pause and ponder. Do you have a grasp on what abstractions are? What are other abstractions in our map? Can you think of other examples of abstractions?
           </Definition>
           <br/>
-          <br/>
           Now, this map is pretty great for modelling your surroundings and it’s particularly good at helping you navigate the city. 
           <br/>
           <br/>
-          But let’s say over time you become more familiar with your surroundings. You don’t necessarily need a detailed map to give you information about where you are. Instead, you’re more interested in how points of interest in the city connect to each other. You only want to know if there is a path between landmarks and nothing else. We don’t care about the shape of the roads, just whether there is a road that takes us from one building to the next. This task can be accomplished with our original map, but there’s unnecessary detail that impedes our new desires. These details were useful before when we were less familiar with the city, but now that we’re experienced they can be disregarded.
+          But let’s say over time you become more familiar with your surroundings. You don’t necessarily need a detailed map to give you information about where you are. Instead, you’re more interested in how points of interest in the city connect to each other. You only want to know if there is a path between landmarks and nothing else. We don’t care about the shape of the roads, just whether there is a road that takes us from one building to the next. This task <i>can</i> be accomplished with our original map, but there’s unnecessary detail that impedes our new desires. These details were useful before when we were less familiar with the city, but now that we’re experienced they can be disregarded.
           <br/>
           <br/>
           So let’s try and construct a new model. Instead of drawings of buildings, let’s just have a circle with the name of the building. Instead of having a detailed reconstruction of the roads of our city, let’s just have a line connect two circles if there is a road connecting two buildings. Now our map looks quite different! To the untrained eye, it looks like a bunch of randomly connected circles. But we devised this new model with a specific goal in mind - to understand how buildings in our city are connected at a high level. We want to look at our map and instantly know if there is a way to get from one building to the next. The details of the route are not important anymore, we just want to know if it’s possible. This new model has removed the details that were required for navigation because our goal has now shifted. 
           <br/>
           <br/>
-          The fact that we developed this new model not from looking at the city, but rather from looking at a map of the city indicates something that is rather profound: abstractions can build upon existing abstractions. We took what we knew about maps and tried to minimize the number of details to look at our city in a new way. This concept alone is what makes math so vast and powerful. We can continually develop abstractions and gain even more insight as we go along.
+          The fact that we developed this new model not from looking at the city, but rather from looking at a <i>map</i> of the city indicates something that is rather profound: abstractions can build upon existing abstractions. We took what we knew about maps and tried to minimize the number of details to look at our city in a new way. This concept alone is what makes math so vast and powerful. We can continually develop abstractions and gain even more insight as we go along.
           <br/>
           <br/>
-          Though our new map fulfills its task of understanding proximity well, it fails miserably as a navigation tool. If we were to give our new map to a new resident of the city, they would probably look at us with confusion and ask us to leave them alone. But why are they behaving like this? It’s because our new map lacks the necessary details for navigation and only really makes sense to someone who has already lived in the city. To a newcomer who still needs the details, it doesn’t do a great job. 
+          Though our new map fulfills its task of understanding proximity well, it fails miserably as a navigation tool. If we were to give our new map to a new resident of the city, they would probably look at us with confusion and ask us to leave them alone. But why are they behaving like this? It’s because our new map lacks the necessary details for navigation and only really makes sense to someone who has already lived in the city. To a newcomer who still <i>needs</i> the details, it doesn’t do a great job. 
           <br/>
           <br/>
           This paves the way for another key insight: abstraction is a spectrum. The more abstract our model, the more details we lose, but the more general our insights. 
@@ -61,17 +59,21 @@ function Prologue(props) {
           Abstractions are an extremely common tool used pretty much any time we want to represent something in the real world.
           <br/>
           <br/>
-          Let’s consider some mathematical abstractions. One of the most fundamental objects in math is the set. A set is simply a collection of other objects. It is an abstraction of one’s idea of a container, or a list.
+          Let’s consider some mathematical abstractions. One of the most fundamental objects in math is the <i>set</i>.
+          <br/>
+          <br/>
+          <Definition>A <i>set</i> is  a collection of other objects. It is an abstraction of one’s idea of a container, or a list.</Definition>
+          <br/>
           [set example]
+          When we want to develop intuitions about how mathematical objects behave, we typically do so by analyzing sets. For example, we could spend our whole life studying the color blue, but that really doesn’t help us understand color as a whole. We should instead look at the <i>set</i> of all colors, of which blue is an <i>element</i>. Now, anything we glean about this set applies not only to blue, but to <i>all</i> colors, and our life has no longer been wasted! Sets are valuable because they are a natural generalization - we want to consider how <i>all</i> objects of a certain type behave, not just the one. 
           <br/>
           <br/>
-          When we want to develop intuitions about how mathematical objects behave, we typically do so by analyzing sets. For example, we could spend our whole life studying the color blue, but that really doesn’t help us understand color as a whole. We should instead look at the set of all colors, of which blue is an element. Now, anything we glean about this set applies not only to blue, but to all colors, and our life has no longer been wasted! Sets are valuable because they are a natural generalization - we want to consider how all objects of a certain type behave, not just the one. 
+          Another important mathematical concept is that of a <i>function</i>. 
           <br/>
           <br/>
-          Another important mathematical concept is that of a function. A function takes in an input and assigns it uniquely to an output. A function can be thought of as an abstraction of a machine; it takes something in and modifies it in a consistent way. 
+          <Definition>A <i>function</i> is a mathematical object that takes in an input and assigns it uniquely to an output. It can be thought of as an abstraction of a machine; it takes something in and modifies it in a consistent way.</Definition>
           <br/>
-          <br/>
-          While sets may be the most valuable structure in math, they are very static in nature. Once you define a set, there’s nothing you can do to really change the set. You can define a new set, but that doesn’t change anything about the first one. But what if we want to look at how multiple sets interact with each other? What if we want to take some elements from one set and combine them with elements from a second set? 
+          While sets may be the most valuable structure in math, they are very static in nature. Once you define a set, there’s nothing you can do to really <i>change</i> the set. You can define a new set, but that doesn’t change anything about the first one. But what if we want to look at how multiple sets interact with each other? What if we want to take some elements from one set and combine them with elements from a second set? 
           <br/>
           <br/>
           These things are only possible with functions. Functions are the moving parts of math; they are the bridges that link sets. If sets are like nouns in our mathematical language, then functions are like verbs. They make things happen. 

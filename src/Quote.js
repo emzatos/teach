@@ -24,6 +24,7 @@ function Quote(props) {
         color: 'rgb(184, 182, 182)',
         fontWeight: '400',
         fontFamily: 'Alegreya Sans SC , sans-serif',
+        letterSpacing: '5px'
       }
       
     return (
