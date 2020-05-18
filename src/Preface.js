@@ -15,6 +15,8 @@ function Preface(props) {
   }, []);
 
 
+
+
   return (
     <div>
     <div className="Post">
@@ -25,7 +27,6 @@ function Preface(props) {
       <body>
         <div className="Body" dangerouslySetInnerHTML={{ __html: text }}/>
       </body>
-      
     </div>
     </div>
   );

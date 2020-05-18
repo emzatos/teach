@@ -27,6 +27,7 @@
   padding-right: 25%;
   padding-bottom: 5%;
   max-width: 900px;
+  min-width: 400px;
 }
 
 .Footer {
@@ -34,6 +35,20 @@
   padding-left: 25%;
   padding-right: 25%;
   padding-bottom: 5%;
+}
+
+.test div {
+  background: white;
+  border: 1px solid black;
+  width: 75px;
+  height: 20px;
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: 'Prata', serif;
+  margin-block-end: 1%;
 }
 
 .App-link {
