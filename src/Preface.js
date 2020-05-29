@@ -6,7 +6,6 @@ function Preface(props) {
 
 
   return (
-      <body>
         <div className="Body">
         <Quote title='Preface' quote="i hate algebra" author="John Conway"/>
         I’d like to begin by describing my motivations and goals for this project.
@@ -29,7 +28,6 @@ function Preface(props) {
         <br/>
         I hope you enjoy the journey as much as I did.
         </div>
-      </body>
   );
 }
 

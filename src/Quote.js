@@ -37,6 +37,8 @@ function Quote(props) {
         fontSize: 'calc(40px + 2vmin)',
         color: 'black',
         fontFamily: 'Prata, serif',
+        marginTop: 'auto',
+        paddingTop: '5%',
         marginBlockEnd: '1%'
       }
       

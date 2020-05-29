@@ -6,7 +6,6 @@ import Quote from "./Quote.js"
 function About(props) {
 
   return (
-      <body>
         <div className="Body">
         <Quote title="About"/>
             Hello! my name is Emran Shafaq. I currently work as a software engineer at Microsoft under the Windows Security team.
@@ -15,7 +14,6 @@ function About(props) {
             with others, or let me know! If you have a request for a topic, leave a comment! If you want more math learning tools, check out
             3blue1brown on Youtube!
         </div>
-      </body>
   );
 }
 
