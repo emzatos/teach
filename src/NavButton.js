@@ -2,16 +2,38 @@ import React, {useState} from 'react';
 import {motion} from 'framer-motion'
 
 function NavButton (props) {
-    const styles = {
-        width: 100,
-        height: 100,
-        margin: "auto",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+    const prevStyles = {
+        alignItems: 'center',
+        position: 'absolute',
+        left: '0px',
+        border: '1px solid black',
         color: "white",
-        cursor: "pointer"
+        cursor: "pointer",
+        display: "flex",
+        fontFamily: 'Prata , serif',
+        height: 40,
+        justifyContent: 'center',
+        marginTop: '40px',
+        marginBottom: '40px',
+        width: 100,
       };
+    
+    const nextStyles = {
+        alignItems: 'center',
+        border: '1px solid black',
+        float: 'right',
+        color: "white",
+        cursor: "pointer",
+        display: "flex",
+        right: "0px",
+        fontFamily: 'Prata , serif',
+        height: 40,
+        justifyContent: 'center',
+        marginRight: "50px",
+        marginTop: '40px',
+        marginBottom: '40px',
+        width: 100,
+    }
       
       const variants = {
         active: {
@@ -32,9 +54,9 @@ function NavButton (props) {
     const [isToggled, setToggle] = useState(false);
     return ( 
       <motion.div
-        onHoverStart={() => setToggle(!isToggled)}
-        onHoverEnd={() => setToggle(!isToggled)}
-        style={styles}
+        onHoverStart={() => setToggle(true)}
+        onHoverEnd={() => setToggle(false)}
+        style={props.direction === "Next" ? nextStyles : prevStyles}
         animate={isToggled ? "active" : "inActive"}
         variants={variants}
       >

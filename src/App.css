@@ -8,27 +8,13 @@
   text-align: start;
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
-  padding-bottom: 5%;
+  padding-bottom: 40px;
   max-width: 900px;
   min-width: 200px;
+  position: relative;
   padding-left: 50px;
   padding-right: 50px;
   margin: auto;
-}
-
-
-.test div {
-  background: white;
-  border: 1px solid black;
-  width: 75px;
-  height: 20px;
-  display: inline-block;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  font-family: 'Prata', serif;
-  margin-block-end: 1%;
 }
 
 .App-link {

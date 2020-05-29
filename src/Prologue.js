@@ -2,6 +2,8 @@ import React from 'react';
 import Definition from './Definition.js';
 import './App.css';
 import Quote from './Quote.js';
+import {Link} from 'react-router-dom';
+import NavButton from './NavButton.js';
 
 function Prologue(props) {
 
@@ -83,6 +85,14 @@ function Prologue(props) {
           <br/>
           <br/>
           With that, our journey continues!
+          <br/>
+          <Link to="/preface" style={{textDecoration: "none",  display: "inline"}}>
+            <NavButton direction="Previous" link="Preface"/>
+          </Link>
+
+          <Link to="/about" style={{textDecoration: "none",  display: "inline"}}>
+            <NavButton direction="Next" link="About"/>
+          </Link>
 
         </div>
   );

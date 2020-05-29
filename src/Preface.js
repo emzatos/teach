@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Quote from "./Quote.js";
+import {Link} from 'react-router-dom';
+import NavButton from "./NavButton.js"
 
 function Preface(props) {
 
@@ -27,7 +29,11 @@ function Preface(props) {
         <br/>
         <br/>
         I hope you enjoy the journey as much as I did.
+        <Link to="/prologue" style={{textDecoration: "none",  display: "inline"}}>
+          <NavButton direction="Next" link="Prologue"/>
+        </Link>
         </div>
+
   );
 }
 
