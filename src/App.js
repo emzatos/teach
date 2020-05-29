@@ -25,7 +25,6 @@ function App() {
 
   return (
       <main>
-          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
           <HashRouter>
               <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
               <Route path= '/' component={Preface} exact />
@@ -33,7 +32,7 @@ function App() {
               <Route path= '/prologue' component={Prologue}  />
               <Route path= '/about' component={About}  />
 
-              <Link to={ index === paths.length-1 ? "/" : "/" + paths[index+1].toLowerCase() } style={{textDecoration: "none",  display: index === paths.length-1 ? "none" : "inline"}}>
+              {/* <Link to={ index === paths.length-1 ? "/" : "/" + paths[index+1].toLowerCase() } style={{textDecoration: "none",  display: index === paths.length-1 ? "none" : "inline"}}>
                 <div className="test" onClick = {() => {setIndex( (index + 1) % paths.length)}}>
                   <NavButton direction="Next" link={paths[index+1]}/>
                 </div>
@@ -44,7 +43,7 @@ function App() {
                   <NavButton direction="Previous" link={paths[index-1]}/>
                 </div>
               </Link>
-              
+               */}
           </HashRouter>
       </main>
   )
