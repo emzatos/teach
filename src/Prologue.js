@@ -6,14 +6,9 @@ import Quote from './Quote.js';
 function Prologue(props) {
 
   return (
-    <div>
-    <div className="Post">
-      <header className="Header">
-        <p className="Title">Prologue</p>
-        <Quote quote='mathematics is the art of giving the same name to different things' author='Henri Poincaré'/>
-      </header>
       <body>
         <div className="Body">
+        <Quote title='Prologue' quote='mathematics is the art of giving the same name to different things' author='Henri Poincaré'/>
           In the following introductory lesson, I would like to go over how to think about mathematical concepts. My goal is to try and get you away from thinking about math as formulas and instead get you to develop natural intuitions for concepts. 
           <br/>
           <br/>
@@ -92,8 +87,6 @@ function Prologue(props) {
 
         </div>
       </body>
-    </div>
-    </div>
   );
 }
 

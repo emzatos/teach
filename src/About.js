@@ -1,16 +1,14 @@
 import React from 'react';
 import './App.css';
+import Quote from "./Quote.js"
 
 
 function About(props) {
 
   return (
-    <div className="Post">
-      <header className="Header">
-        <p className="Title">About</p>
-      </header>
       <body>
         <div className="Body">
+        <Quote title="About"/>
             Hello! my name is Emran Shafaq. I currently work as a software engineer at Microsoft under the Windows Security team.
             I graduated from the University of Texas at Austin with degrees in computer science and mathematics. I started this blog
             primarily to learn React, but ultimately to develop my skills as an instructor. If you found this blog useful please share it 
@@ -18,7 +16,6 @@ function About(props) {
             3blue1brown on Youtube!
         </div>
       </body>
-    </div>
   );
 }
 

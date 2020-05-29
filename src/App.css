@@ -7,8 +7,8 @@
 }
 
 
-.Header > .Title {
-  display: inline-block;
+.Body > .Title {
+  text-align: center;
   flex-direction: row;
   align-items: center;
   justify-content: center;
