@@ -13,7 +13,9 @@ function Sidebar(props) {
     },
     bmBurgerButton: {
       width: '22px',
-      height: '18px'
+      height: '18px',
+      left: '13px',
+      top: '20px'
     }
   }
 
