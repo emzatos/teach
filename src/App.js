@@ -1,6 +1,6 @@
 import React from 'react';
 import {HashRouter, Route} from 'react-router-dom'
-//import Sidebar from "./Sidebar.js"
+import Sidebar from "./Sidebar.js"
 // import { createBrowserHistory } from "history";
 import Preface from "./Preface.js"
 import About from "./About.js"
