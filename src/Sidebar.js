@@ -10,6 +10,10 @@ function Sidebar(props) {
   const style = {
     bmMenuWrap: {
       transition: 'all 0.3s'
+    },
+    bmBurgerButton: {
+      width: '22px',
+      height: '18px'
     }
   }
 
