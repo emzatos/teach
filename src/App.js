@@ -26,7 +26,7 @@ function App() {
   return (
       <main>
           <HashRouter>
-              {/* <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} /> */}
+              <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
               <Route path= '/' component={Preface} exact />
               <Route path= '/preface' component={Preface}  />
               <Route path= '/prologue' component={Prologue}  />
