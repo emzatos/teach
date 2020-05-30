@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {motion} from 'framer-motion'
 
 function NavButton (props) {
@@ -51,6 +51,11 @@ function NavButton (props) {
           color: "black"
         }
       };
+    
+    useEffect(() => {
+      window.scrollTo(0,0)
+    }, []);
+
     const [isToggled, setToggle] = useState(false);
     return ( 
       <motion.div
