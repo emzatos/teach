@@ -21,7 +21,7 @@ function Quote(props) {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        fontSize: 'calc(6px + 2vmin)',
+        fontSize: 'calc(1px + 2vmin)',
         marginBlockStart: 'auto',
         color: 'rgb(184, 182, 182)',
         fontWeight: '400',
