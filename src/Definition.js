@@ -2,20 +2,22 @@ import React from 'react';
 
 function Definition(props) {
 
-      const spanStyle = {
+    const bg_color = {"Note" : "#ba1626", undefined : "#7116bd"}
+
+    const spanStyle = {
         lineHeight: "1.5",
-        color: props.title === "Note" ? "#ba1626" : "rgb(113, 22, 189)"
-      }
+        color: bg_color[props.title]
+    }
 
-      const textStyle = {
-          background: props.title === "Note" ? "#ba1626" : "rgb(113, 22, 189)",
-          marginRight: "5px",
-          display: "inline-block",
-          lineHeight: "1.2",
-          color: "white",
-          padding: "3px 6px"
+    const textStyle = {
+        background: bg_color[props.title],
+        marginRight: "5px",
+        display: "inline-block",
+        lineHeight: "1.2",
+        color: "white",
+        padding: "3px 6px"
 
-      }
+    }
     return (
         <div>
         <span style={spanStyle}>
