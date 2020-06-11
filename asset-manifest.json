@@ -1,5 +1,5 @@
 {
-  "main.css": "/teach/static/css/main.f620f9f8.chunk.css",
+  "main.css": "/teach/static/css/main.6455e983.chunk.css",
   "main.js": "/teach/static/js/main.d9979599.chunk.js",
   "main.js.map": "/teach/static/js/main.d9979599.chunk.js.map",
   "runtime~main.js": "/teach/static/js/runtime~main.4c5f34f6.js",
@@ -7,8 +7,8 @@
   "static/js/2.e3b58f64.chunk.js": "/teach/static/js/2.e3b58f64.chunk.js",
   "static/js/2.e3b58f64.chunk.js.map": "/teach/static/js/2.e3b58f64.chunk.js.map",
   "index.html": "/teach/index.html",
-  "precache-manifest.9e4322853aef0661a02e5ae94ed4adc1.js": "/teach/precache-manifest.9e4322853aef0661a02e5ae94ed4adc1.js",
+  "precache-manifest.e6c20ce9dce05ed2141b0e7272a70b1d.js": "/teach/precache-manifest.e6c20ce9dce05ed2141b0e7272a70b1d.js",
   "service-worker.js": "/teach/service-worker.js",
-  "static/css/main.f620f9f8.chunk.css.map": "/teach/static/css/main.f620f9f8.chunk.css.map",
+  "static/css/main.6455e983.chunk.css.map": "/teach/static/css/main.6455e983.chunk.css.map",
   "static/media/v1.png": "/teach/static/media/v1.28f2ec39.png"
 }
