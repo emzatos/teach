@@ -4,6 +4,7 @@ import './App.css';
 import Quote from './Quote.js';
 import {Link} from 'react-router-dom';
 import NavButton from './NavButton.js';
+import image from './assets/v1.png';
 
 function Prologue(props) {
 
@@ -51,7 +52,7 @@ function Prologue(props) {
           This paves the way for another key insight: abstraction is a spectrum. The more abstract our model, the more details we lose, but the more general our insights. 
           <br/>
           <br/>
-          [insert map abstraction]
+          <img src={image} alt="Logo" className="center"></img>
           Abstractions are an extremely common tool used pretty much any time we want to represent something in the real world.
           <br/>
           <br/>
