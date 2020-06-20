@@ -1,10 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Definition from './Definition.js';
 import './App.css';
 import Quote from './Quote.js';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavButton from './NavButton.js';
-import image from './assets/v1.png';
+import image1 from './assets/v1.png';
+import image2 from './assets/v2.png';
+import image3 from './assets/v3.png';
+import image4 from './assets/v4.png';
+import { Slider } from "@material-ui/core";
+
+function AbstractionExample(props) {
+
+  const [value, setValue] = useState(0);
+  const descriptionText = [
+    "OK gamers",
+    "No more gamers",
+    "what in the",
+    "ok this"
+  ]
+
+  const images = [
+    image1,
+    image2,
+    image3,
+    image4
+  ]
+  const textStyle = {
+      display: "block",
+      width: "fit-content",
+      margin: "auto",
+      background: "#f8f3fc",
+      color: "black",
+      padding: "3px 6px"
+
+  }
+  const handleSliderChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <>
+    <img src={images[value]} alt="Logo" className="center"></img>
+    <span style={textStyle}>
+      {descriptionText[value]}
+    </span>
+    <br/>
+    <Slider
+      value={value}
+      step={1}
+      min={0}
+      max={3}
+      onChange={handleSliderChange}
+      />
+    
+    </>
+  )
+}
 
 function Prologue(props) {
 
@@ -52,7 +104,9 @@ function Prologue(props) {
           This paves the way for another key insight: abstraction is a spectrum. The more abstract our model, the more details we lose, but the more general our insights. 
           <br/>
           <br/>
-          <img src={image} alt="Logo" className="center"></img>
+          <AbstractionExample></AbstractionExample>
+          <br/>
+          <br/>
           Abstractions are an extremely common tool used pretty much any time we want to represent something in the real world.
           <br/>
           <br/>
