@@ -14,12 +14,22 @@ function AbstractionExample(props) {
 
   const [value, setValue] = useState(0);
   const descriptionText = [
-    "OK gamers",
-    "No more gamers",
-    "what in the",
-    "ok this"
+    "Our first iteration looks like a typical map. This is the most natural abstraction of our original city: we simply represent whatever we see in real life with a drawing.",
+    "In our next iteration, we become a bit lazier. Since we typically only want to use a map to get to particular points of interest, we can eliminate specific details like trees from our rendition. This gives us a cleaner, simpler view of our city.",
+    "Our next attempt takes the previous idea to the extreme. Assuming we know what the buildings look like, we can forgo drawing the buildings altogether. We only need to demonstrate that something is at a particular location. This can easily be done by just drawing a circle at the right location.",
+    "Finally, we come to our most abstract representation of the city. As in the last drawing, we continue to represent our buildings as circles. This time, however, we choose to connect each building with lines instead of roads. If there is a line between two buildings, then they are within walking distance to each other. Again, \"walking distance\" means different things to different people. If you can only walk a short distance, then you would have fewer connected lines. If you are willing to walk further, then more circles would be connected with lines. Ultimately, this map gives us an idea of how connected a city is, or how accessible it is to an individual. This abstract model may seem meaningless at first, but the lines and circles have a much deeper, implied meaning that gives us a more general understanding of distance and proximity in our town."
   ]
 
+  const marx = [
+    {
+      value: 0,
+      label: "Least abstract"
+    },
+    {
+      value: 3,
+      label: "Most abstract"
+    }
+  ];
   const images = [
     image1,
     image2,
@@ -35,6 +45,7 @@ function AbstractionExample(props) {
       padding: "3px 6px"
 
   }
+
   const handleSliderChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -46,14 +57,16 @@ function AbstractionExample(props) {
       {descriptionText[value]}
     </span>
     <br/>
+    <br/>
     <Slider
       value={value}
       step={1}
       min={0}
       max={3}
+      marks={marx}
       onChange={handleSliderChange}
       />
-    
+    <br/>
     </>
   )
 }
